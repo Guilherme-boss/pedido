@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Pedido</title>
+</head>
+<body>
+    <div class="box">
+        <h1> HELLO BIG LOVE </h1>
+        <h3> vem até minha casa agora?</h3>
+        <div class="button-container">
+            <button>
+                <a href="https://www.youtube.com/watch?v=490AyJqySa0" id="yes">Sim</a>
+            </button>
+            <button id="no">Não</button>
+        </div>
+    </div>
+    
+    <script>
+        let button = document.getElementById('no')
+        let height = window.innerHeight - 12
+        let width = window.innerWidth -12
+
+        button.addEventListener('mouseover', function(){
+            button.style.position='absolute'
+            button.style.top=Math.random()*height+'px'
+            button.style.left=Math.random()*width+'px'
+        })
+
+    </script>
+</body>
+</html>
